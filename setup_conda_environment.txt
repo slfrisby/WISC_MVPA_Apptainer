@@ -1,0 +1,11 @@
+bash
+export PATH=$PATH:/imaging/local/software/anaconda/latest/x86_64/bin/
+
+source activate
+cd ~/
+
+conda create -n WISC_MVPA python=3 pip setuptools wheel
+source activate WISC_MVPA
+pip install pip --upgrade 
+pip install /group/mlr-lab/Saskia/grOWL_simulations/dependencies/InputSetup
+pip list
