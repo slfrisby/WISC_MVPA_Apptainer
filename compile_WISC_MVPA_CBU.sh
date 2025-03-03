@@ -49,8 +49,9 @@ cp -r 00 ../
 
 cd /group/mlr-lab/Saskia/WISC_MVPA_Apptainer
 
-# tarball test data (for unzipping in container)
-tar -zcvf test_data.tar.gz test_data 00
+# tarball test data (for unzipping in container). For ease of testing, put data and metadata in job folder along with params.json. 
+cp -r test_data 00
+tar -zcvf test_data.tar.gz 00
 # tarball compiled code, .def and .sub files (for unzipping on login node), and test dataset. Do in a temporary directory to avoid name conflicts
 mkdir tmp
 cp WISC_MVPA/WISC_MVPA tmp

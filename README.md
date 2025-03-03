@@ -17,4 +17,16 @@ apptainer build WISC_MVPA.sif WISC_MVPA_runtime.def
 # and when the build is finished:
 exit
 ```
+4. **Test the container (optional)**. In your home directory on CHTC:
+```
+# enter the container
+apptainer shell -e WISC_MVPA.sif
+# extract the test data
+tar -zxvf test_data.tar.gz
+# navigate into the test job directory
+cd 00
+# run the analysis
+/WISC_MVPA
+# if successful, verbose output will be produced and the directory 00 will then contain results.mat .
+```
 
