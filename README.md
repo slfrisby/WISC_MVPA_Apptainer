@@ -29,4 +29,4 @@ cd 00
 /WISC_MVPA
 # if successful, verbose output will be produced and the directory 00 will then contain results.mat .
 ```
-
+5. **Move the container to your `staging` directory** (this is recommended by CHTC because of the size of the containers - although this container is reasonably small). 
