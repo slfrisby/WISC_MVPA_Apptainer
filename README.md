@@ -13,7 +13,7 @@ Set up Apptainer in which to run WISC MVPA (https://github.com/crcox/WISC_MVPA).
 ```
 condor_submit -i build.sub
 # and when the job begins:
-apptainer build WISC_MVPA.sif WISC_MVPA_runtime.def
+apptainer build WISC_MVPA.sif WISC_MVPA.def
 # and when the build is finished:
 exit
 ```
