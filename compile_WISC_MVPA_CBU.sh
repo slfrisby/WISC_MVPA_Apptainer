@@ -55,11 +55,11 @@ tar -zcvf test_data.tar.gz 00
 # tarball compiled code, .def and .sub files (for unzipping on login node), and test dataset. Do in a temporary directory to avoid name conflicts
 mkdir tmp
 cp WISC_MVPA/WISC_MVPA tmp
-cp WISC_MVPA_runtime.def tmp
+cp WISC_MVPA.def tmp
 cp build.sub tmp
 cp test_data.tar.gz tmp
 cd tmp
-tar -zcvf /group/mlr-lab/Saskia/WISC_MVPA_Apptainer/apptainer_setup.tar.gz WISC_MVPA WISC_MVPA_runtime.def build.sub test_data.tar.gz
+tar -zcvf /group/mlr-lab/Saskia/WISC_MVPA_Apptainer/apptainer_setup.tar.gz WISC_MVPA WISC_MVPA.def build.sub test_data.tar.gz
 
 # cleanup
 cd /group/mlr-lab/Saskia/WISC_MVPA_Apptainer

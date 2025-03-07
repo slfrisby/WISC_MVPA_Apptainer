@@ -9,7 +9,7 @@ log = build.log
 executable = /usr/bin/hostname
 
 # If you have additional files in your /home directory that are required for your container, add them to the transfer_input_files line as a comma-separated list.
-transfer_input_files = WISC_MVPA,WISC_MVPA_runtime.def,test_data.tar.gz
+transfer_input_files = WISC_MVPA,WISC_MVPA.def
 requirements = (HasCHTCStaging == true)
 
 +IsBuildJob = true

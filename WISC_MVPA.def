@@ -1,0 +1,23 @@
+Bootstrap: docker
+From: containers.mathworks.com/matlab-runtime:r2023b
+# the lines above set the base container image
+
+%files
+	# compiled code
+	WISC_MVPA /
+%post
+	# grant /tmp directory read/write permissions
+	chmod 777 /tmp
+	# install useful things
+	apt-get update -y
+	apt-get install -y \
+	wget \
+	nano
+
+	# make compiled code executable
+	chmod +x /WISC_MVPA
+
+%environment
+	
+	# add runtime to path
+	export LD_LIBRARY_PATH=/opt/matlab_runtime/R2023b/runtime/glnxa64:/opt/matlab_runtime/R2023b/bin/glnxa64:$LD_LIBRARY_PATH
