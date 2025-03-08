@@ -21,4 +21,4 @@ From: containers.mathworks.com/matlab-runtime:r2023b
 	
 	# add runtime to path
 	export LD_LIBRARY_PATH=/opt/matlabruntime/R2023b/runtime/glnxa64:/opt/matlabruntime/R2023b/bin/glnxa64:$LD_LIBRARY_PATH
-	AGREE_TO_MATLAB_RUNTIME_LICENSE=yes
+	export AGREE_TO_MATLAB_RUNTIME_LICENSE=yes
