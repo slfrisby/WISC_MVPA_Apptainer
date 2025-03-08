@@ -28,6 +28,7 @@ cd 00
 # run the analysis
 /WISC_MVPA
 # if successful, verbose output will be produced and the directory 00 will then contain results.mat .
+exit
 # Optionally, clean up the files in the home directory
 chmod +x cleanup_homedir.sh
 ./cleanup_homedir.sh
