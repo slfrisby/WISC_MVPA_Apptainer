@@ -58,8 +58,9 @@ cp WISC_MVPA/WISC_MVPA tmp
 cp WISC_MVPA.def tmp
 cp build.sub tmp
 cp test_data.tar.gz tmp
+cp cleanup_homedir.sh tmp
 cd tmp
-tar -zcvf /group/mlr-lab/Saskia/WISC_MVPA_Apptainer/apptainer_setup.tar.gz WISC_MVPA WISC_MVPA.def build.sub test_data.tar.gz
+tar -zcvf /group/mlr-lab/Saskia/WISC_MVPA_Apptainer/apptainer_setup.tar.gz WISC_MVPA WISC_MVPA.def build.sub test_data.tar.gz cleanup_homedir.sh
 
 # cleanup
 cd /group/mlr-lab/Saskia/WISC_MVPA_Apptainer

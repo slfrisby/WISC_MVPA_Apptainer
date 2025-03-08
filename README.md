@@ -28,9 +28,12 @@ cd 00
 # run the analysis
 /WISC_MVPA
 # if successful, verbose output will be produced and the directory 00 will then contain results.mat .
+# Optionally, clean up the files in the home directory
+chmod +x cleanup_homedir.sh
+./cleanup_homedir.sh
 ```
 5. **Move the container to your `staging` directory** (this is recommended by CHTC because of the size of the containers - although this container is reasonably small at ~5 GB). 
 6. **Add the container to your .sub files** by following the instructions on the CHTC website (https://chtc.cs.wisc.edu/uw-research-computing/apptainer-htc). Note that the WISC MVPA workflow usually uses flocking (the jobs "flock" to unused computers on the UW-Madison campus), so follow the instructions that enable +WantFlocking. 
-7. **Submit jobs!**
+7. **Submit jobs!** See the WISC\_MVPA repo for a template .sub file (https://github.com/crcox/WISC\_MVPA/blob/main/templates/apptainer_sub.sub).
 
 
