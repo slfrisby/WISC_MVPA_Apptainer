@@ -33,12 +33,12 @@ exit
 # exit the build job
 exit 
 ```
-5. **Add the container to your .sub files** by following the instructions on the CHTC website. (https://chtc.cs.wisc.edu/uw-research-computing/apptainer-htc). Note that the WISC MVPA workflow usually uses flocking (the jobs "flock" to unused computers on the UW-Madison campus), so follow the instructions that enable +WantFlocking. **Bug fix**: sometimes the container does not move to the execute node successfully and it can be necessary to transfer it manually using the following syntax:
+4. **Add the container to your .sub files** by following the instructions on the CHTC website. (https://chtc.cs.wisc.edu/uw-research-computing/apptainer-htc). Note that the WISC MVPA workflow usually uses flocking (the jobs "flock" to unused computers on the UW-Madison campus), so follow the instructions that enable +WantFlocking. **Bug fix**: sometimes the container does not move to the execute node successfully and it can be necessary to transfer it manually using the following syntax:
 ```
 container_image = WISC_MVPA.sif
 
 transfer_input_files = osdf:///chtc/staging/sfrisby/WISC_MVPA.sif,other_argument_1,other_argument_2
 ```
-6. **Submit jobs!** See the WISC\_MVPA repo for a template .sub file (https://github.com/crcox/WISC\_MVPA/blob/main/templates/apptainer_sub.sub).
+5. **Submit jobs!** See the WISC\_MVPA repo for a template .sub file (https://github.com/crcox/WISC\_MVPA/blob/main/templates/apptainer_sub.sub).
 
 
