@@ -6,11 +6,6 @@ From: containers.mathworks.com/matlab-runtime:r2023b
 	# compiled code
 	WISC_MVPA /
 %post
-	# grant /tmp directory read/write permissions
-	chmod 777 /tmp
-	# install useful things
-	apt-get update -y
-
 	# make compiled code executable
 	chmod +x /WISC_MVPA
 
